@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando TS para rodar em um HTML</title>
+</head>
+
+<body>
+    <ul>
+        <li>
+            Criar um html;
+        </li>
+        <li>
+            Adcionar o caminho do script JS ao HTML;
+        </li>
+        <li>
+            Na pasta raiz, abra o terminal e rode '<code>npm init -y</code>'
+        </li>
+        <li>
+            Em seguida, rode: '<code>npm i -s live-server</code>'
+        </li>
+        <li>
+            Abra o arquivo 'package.json' e mude configuração '<code>"scripts"</code>' para: '
+            <code> 
+                    "scripts": {
+                    "start": "live-server"
+                    }
+            </code>'
+        </li>
+        <li>
+            No terminal rode '<code>tsc -w</code>'.
+        </li>
+        <li>
+            Para rodar o server, no terminal digite '<code>npm start</code>'.
+        </li>
+    </ul>
+    <script src="/introdução/basico.js"></script>
+</body>
+
+</html>
