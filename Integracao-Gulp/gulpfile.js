@@ -22,7 +22,7 @@ async function gerarJS() {
 }
 
 async function gerarJSProducao() {
-    return gulp.src("dist/app.js").pipe((rename("app.min.js"))).pipe(uglify()).pipe(gulp.dest("dist"))
+    return gulp.src("dist/app.js").pipe(rename("app.min.js")).pipe(uglify()).pipe(gulp.dest("dist"))
 }
 
 export default gulp.series(
